@@ -9,7 +9,7 @@ import joblib
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "models" / "placement_model.joblib"
+MODEL_PATH = BASE_DIR / "placement_model.joblib"
 
 MODEL_LABELS = {
     "logistic_regression": "Logistic Regression",
