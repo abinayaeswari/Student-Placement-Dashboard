@@ -42,12 +42,13 @@ import json
 
 USERS_FILE = BASE_DIR / "data" / "users.json"
 
+USERS_FILE.parent.mkdir(parents=True, exist_ok=True)
+
 if not USERS_FILE.exists():
     USERS_FILE.write_text(
         json.dumps({}, indent=4),
         encoding="utf-8"
     )
-
 users = json.loads(USERS_FILE.read_text(encoding="utf-8"))
 
 if "S0001" not in users:
