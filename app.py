@@ -21,7 +21,7 @@ from src.predict import (
 )
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR / "data" / "placement_data.csv"
+DATA_PATH = BASE_DIR / "placement_data.csv"
 RESULTS_PATH = BASE_DIR / "data" / "model_results.csv"
 CORR_PATH = BASE_DIR / "data" / "feature_correlation_with_placement.csv"
 CHARTS_DIR = BASE_DIR / "charts"
