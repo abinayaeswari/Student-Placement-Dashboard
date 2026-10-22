@@ -22,10 +22,10 @@ from src.predict import (
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_PATH = BASE_DIR / "placement_data.csv"
-RESULTS_PATH = BASE_DIR / "data" / "model_results.csv"
-CORR_PATH = BASE_DIR / "data" / "feature_correlation_with_placement.csv"
-CHARTS_DIR = BASE_DIR / "charts"
-REPORT_PATH = BASE_DIR / "assets" / "Student_Placement_Data_Analysis_Report.docx"
+RESULTS_PATH = BASE_DIR / "model_results.csv"
+CORR_PATH = BASE_DIR / "feature_correlation_with_placement.csv"
+CHARTS_DIR = BASE_DIR
+REPORT_PATH = BASE_DIR / "Student_Placement_Data_Analysis_Report.docx"
 
 st.set_page_config(
     page_title="Student Placement Dashboard",
