@@ -54,7 +54,7 @@ users = json.loads(USERS_FILE.read_text(encoding="utf-8"))
 if "S0001" not in users:
     users["S0001"] = {
         "name": "Student",
-        "password": "student123",
+        "password": "",
         "role": "Student",
         "department": "",
         "email": "",
