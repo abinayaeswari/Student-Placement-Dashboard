@@ -88,7 +88,7 @@ if not st.session_state.logged_in:
             login = st.form_submit_button("Login")
 
         if login:
-            if role == "Admin" and username == "admin" and password == "admin123":
+            if role == "Admin" and username == "admin" and password == "":
                 st.session_state.logged_in = True
                 st.session_state.role = "Admin"
                 st.rerun()
